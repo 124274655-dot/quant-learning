@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# 虚拟环境
+venv/
+env/
+.venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+.DS_Store?
+._*
+
+# 系统临时文件
+*.log
+*.tmp
+*.bak
+*.swp
+.tmp/
+*.pid
+*.seed
+*.pid.lock
+*.pid.lock.*
+
+# 大文件/数据
+*.zip
+*.tar.gz
+*.parquet
+feather/
+
+# 敏感信息
+.env
+.env.local
+*.secret
+token.txt
+credentials.json
