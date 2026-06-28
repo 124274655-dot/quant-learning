@@ -5,12 +5,16 @@
 ## 📁 目录结构
 
 ```
-量化学习任务工作空间/
+quant-learning/
 ├── README.md
 ├── .gitignore
-├── 华工科技_000988_收盘价曲线图.png    # K线走势图
-├── 华工科技_000988_日线数据.csv         # 原始日线数据
-└── .workbuddy/                          # WorkBuddy 项目记忆
+├── data/                              # 原始与处理后的数据
+│   └── huagong_000988_daily.csv       # 华工科技日线数据(241 个交易日)
+├── figures/                           # 可视化图表
+│   └── huagong_000988_close_price.png # 收盘价走势图
+├── strategies/                        # 量化策略(待补充)
+├── notebooks/                         # Jupyter 实验(待补充)
+└── .workbuddy/                        # WorkBuddy 项目记忆
 ```
 
 ## 🚀 已完成的任务
@@ -19,6 +23,7 @@
 - ✅ 获取华工科技（000988.SZ）过去一年日线数据
 - ✅ 绘制每日收盘价曲线图
 - ✅ 存储为 CSV 以备后续策略使用
+- ✅ 推送到 GitHub
 
 ## 🛠️ 技术栈
 
