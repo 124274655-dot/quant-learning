@@ -1,0 +1,46 @@
+# 三只典型股票取数 spec
+# 用途: 批量取中芯国际、比亚迪、长江电力的过去 1 年日线数据
+
+meta:
+  version: "1.0"
+  description: "三只典型 A 股: 科技(中芯国际) + 新能源车(比亚迪) + 公用事业(长江电力)"
+  created: "2026-07-02"
+  author: "liuchang"
+
+# 时间窗口
+lookback_days: 365
+comparison_name: "three_stocks"
+
+# 标的池
+stocks:
+  - ts_code: "688981.SH"
+    name: "zhongxin"
+    display_name: "中芯国际"
+    sector: "半导体"
+    note: "中国大陆最大晶圆代工厂,科技成长代表"
+
+  - ts_code: "002594.SZ"
+    name: "byd"
+    display_name: "比亚迪"
+    sector: "汽车-新能源"
+    note: "新能源车龙头,周期性+成长性兼具"
+
+  - ts_code: "600900.SH"
+    name: "changjiang"
+    display_name: "长江电力"
+    sector: "电力-水电"
+    note: "稳健蓝筹,防御型,高股息"
+
+# 字段需求(本任务只取日线,后续可扩展)
+fields:
+  daily:
+    - trade_date
+    - open
+    - high
+    - low
+    - close
+    - pre_close
+    - change
+    - pct_chg
+    - vol
+    - amount
